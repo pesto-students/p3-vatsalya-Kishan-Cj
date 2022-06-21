@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.play-board {
+  background-color: gray;
+  display: flex;
+}
+
+.album-art {
+  margin: 20px;
+}
+
+.title {
+  color: whitesmoke;
+}
+
+.title1 {
+  color: whitesmoke;
+  margin: 0px;
+}
+
+.controls {
+  color: whitesmoke;
+  margin-top: 30%;
+}
+.controls a:link,
+.controls a:visited {
+  color: white;
+  padding: 0px 4px;
+  text-align: center;
+}
+.table {
+  background-color: white;
+  margin: 10px;
+  text-align: left;
+}
+.table td {
+  padding: 10px 25px;
+  font-size: 13px;
+  width: 5%;
+  font-weight: 30;
+}
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+.sync {
+  color: blue;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.play-bar {
+  background-color: #708ee0;
+  height: 180px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.play-bar .art img {
+  margin-top: 5px;
+  margin-left: 5px;
+  max-width: 10%;
+  max-height: 10%;
+}
+.control {
+  position: relative;
+  display: inline;
+  width: 100px;
+  bottom: 10px;
+  left: 170px;
+}
+.play-bar p1 {
+  color: white;
+  position: fixed;
+  margin: 10px;
+  bottom: 120px;
+  left: 170px;
+}
+
+.play-bar p2 {
+  color: white;
+  position: fixed;
+  margin: 10px;
+  bottom: 90px;
+  left: 170px;
+}
+
+.play-bar .control a {
+  padding-right: 100px;
+  color: white;
+  position: relative;
+  display: inline;
+  margin: 20px;
+  margin-right: 10px;
+  padding-bottom: 1px;
+  bottom: 80px;
+  left: 700px;
+}
