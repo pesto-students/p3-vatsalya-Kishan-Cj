@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title h1{
+   text-align: center;
+   margin-top: 20px;
+}
+.container{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-areas:
+    "content1 content2"
+    "content1 content3"
+    "content1 content4"
+    "form form";
+  }
+  .content1{
+    grid-area: content1;
+    place-content: center;
+  }
+  .content2{
+    grid-area: content2;
+    place-content: center;
+  }
+  .content3{
+    grid-area: content3;
+    place-content: center;
+  }
+  .content4{
+    grid-area: content4;
+    place-content: center;
+  }
+  .form{
+    grid-area: form;
+    place-content: center;
+  }
+  .image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+  }
+  @media only screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "content1"
+      "content2"
+      "content3"
+      "content4"
+      "form";
+    }
+    .image{
+        max-width: 200px;
+    }
+  }
+  .form-details{
+    margin: 20px;
+    display: grid;
+    place-content: center;
+    border: 2px solid black;
+    padding: 0 20px 0 20px;
+}
+.form-checkbox{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.form-checkbox-box{
+    padding: 5px 20px 5px 20px;
+}
+
+.form-input{
+    padding: 5px;
+}
+
+.form-input input, select{
+    width: 40%;
+    float: right;
+}
+
+.form-agree  input{
+    float: left;
+    width: auto;
+    margin: 0 10px 0 10px;
+}
+.form-button{
+    margin: 0 auto;
+    place-content: center; 
+}
+.form-button button{
+    background-color: green;
+    color: white;
+    padding: 2px 20px 2px 20px;
+}
+
+.form-button button:hover{
+    background-color: blue;
+}
+  
